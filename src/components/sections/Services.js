@@ -1,12 +1,43 @@
 import React from "react"
 import Section from "../Section"
 
-import ServicesItems from "../ServicesItem"
-// import SERVICE ITEM i nizej petla!!!!
+import ServicesItem from "../ServicesItem"
+// import SERVICE ITEM i nizej petla!!!!\
+
 const Services = props => {
+  const servicesIcons = [
+    "box",
+    "cd",
+    "compass",
+    "pulse",
+    "shield",
+    "syringe",
+    "truck",
+    "vehicle",
+  ]
   return (
-    <Section id="services" className="services" center={true} uppercase={true}>
-      <ServicesItems />
+    <Section
+      id="services"
+      className="services"
+      center={true}
+      uppercase={true}
+      heading="Our services"
+    >
+      <p className="content services__content">
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at its layout.
+      </p>
+      {servicesIcons && (
+        <div className="services__container">
+          <ul className="services__list">
+            {servicesIcons.map((icon, index) => (
+              <li key={index} className="services__item">
+                <ServicesItem iconName={icon} text={icon} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
     </Section>
   )
 }
