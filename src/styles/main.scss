@@ -3,13 +3,15 @@
 
 @import './base/base';
 
-@import './components/button';
-@import './components/hero';
+
+@import './layout/layout';
+@import './layout/header';
 @import './components/footer';
 
-@import './layout/header';
-@import './layout/layout';
+@import './components/hero';
+@import './components/pageLink';
 
 @import './pages/home';
+
 
 // @import './vendor/';
