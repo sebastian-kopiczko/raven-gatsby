@@ -1,0 +1,37 @@
+$purple-light: #99286b;
+$purple-dark: #7b1155;
+$white: #fff;
+$grey-light: #e6e6e6;
+$grey-dark: #868686;
+$black-light: #323232;
+$black-dark: #2c2c2c;
+
+$media-direction: min;
+$breakpoints: (
+  'default': '',
+  'xs': 480px,
+  's': 667px,
+  'm': 1024px,
+  'l': 1280px,
+  'xl': 1680px,
+);
+
+$icons-white: (
+  'search',
+  'arrow-up',
+  'facebook',
+  'google',
+  'twitter',
+  'youtube'
+);
+
+$icons-purple: (
+  'box',
+  'cd',
+  'compass',
+  'pulse',
+  'shield',
+  'syringe',
+  'truck',
+  'vehicle'
+);

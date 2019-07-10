@@ -1,0 +1,211 @@
+@import '../utils/variables';
+@import '../utils/mixins';
+
+.services {
+  &__content {
+    margin: 2em auto 1.5em auto;
+    @include breakpoint('m') {
+      margin-bottom: 2.2em;
+    }
+    @include breakpoint('l') {
+      margin-bottom: 2.5em;
+    }
+  }
+  &__container {
+    display: flex;
+    align-items: flex-end;
+    flex: 2;
+  }
+  &__list {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    @include breakpoint('s') {
+      max-width: 43em;
+      justify-content: space-between;
+    }
+    @include breakpoint('m') {
+      position: relative;
+      bottom: -0.75em;
+    }
+  }
+  &__item {
+    display: flex;
+    flex: 0 0 30%;
+    padding: 5em 0.5em 1.7em 0.5em;
+    margin: 0.25em;
+    text-align: center;
+    line-height: 1.15;
+    font-size: 0.8rem;
+    border-color: $grey-light;
+    position: relative;
+    @include breakpoint('xs') {
+      padding: 6.5em 1em 2em 1em;
+      font-size: 0.9rem;
+    }
+    @include breakpoint('s') {
+      flex: 0 0 22%;
+      padding: 6em 0.5em 2em 0.5em;
+      font-size: 1rem;
+    }
+    @include breakpoint('m') {
+      padding: 7.5em 1em 2em 1em;
+    }
+    @include breakpoint('l') {
+      padding: 9em 1.5em 2.5em 1.5em;
+      margin-bottom: 1em;
+    }
+    span {
+      word-break: break-word;
+    }
+
+    // &:after {
+    //   background-color: $purple-dark;
+    //   width: 1.5em;
+    //   height: 1.5em;
+    //   mask-size: 1.5em;
+    //   top: 2em;
+    // };
+    &.icon {
+      &--compass {
+        &:after {
+          height: 2.5em;
+          mask-size: 1.5em;
+          top: calc(33% - 1.25em);
+        }
+      }
+    }
+  }
+  &__photo {
+    display: none;
+    flex: 1;
+    img {
+      width: auto;
+    }
+    @include breakpoint('m') {
+      position: relative;
+      left: -0.5em;
+      display: flex;
+      width: 18em;
+      align-items: flex-end;
+    }
+  }
+  .row {
+    @include breakpoint('m') {
+      display: flex;
+      align-items: stretch;
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+.icon {
+  @include icons(
+    $icons-purple,
+    $width: 1.7em,
+    $height: 1.7em,
+    $top: 35%,
+    $color: $purple-dark
+  );
+  @include breakpoint('xs') {
+    @include icons(
+      $icons-purple,
+      $width: 2em,
+      $height: 2.3em,
+      $top: 35%,
+      $color: $purple-dark
+    );
+  }
+}
+
+.projects {
+  padding-left: 0;
+  padding-right: 0;
+  background: $grey-light;
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1.5em 0;
+    @include breakpoint('m') {
+      padding: 2em 0;
+    }
+    @include breakpoint('l') {
+      max-width: 72em;
+      margin: 0 auto;
+    }
+  }
+  &__image {
+    flex: 0 0 50%;
+    height: 8rem !important;
+    @include breakpoint('xs') {
+      flex: 1 0 33%;
+      height: 9.5rem !important;
+    }
+    @include breakpoint('m') {
+      height: 11rem !important;
+      flex: 1 0 25%;
+    }
+    @include breakpoint('l') {
+      flex: 1 0 16.5%;
+      height: 12rem !important;
+      margin-bottom: 0;
+    }
+    &:before {
+      @include image-hover-background($purple-dark);
+      transition: all 0.25s;
+    }
+    &:after {
+      transition: all 0.25s;
+      opacity: 0;
+    }
+    &:hover {
+      // @include icon('search');
+      &:after {
+        opacity: 1;
+      }
+      &::before {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+.testimonials {
+  &__content {
+    margin: 1em auto;
+    @include breakpoint('xs') {
+      margin: 1em auto;
+      text-align: center;
+    }
+    @include breakpoint('m') {
+      margin: 1.5em auto;
+      text-align: center;
+    }
+  }
+  &__img {
+    display: block;
+    margin-top: 1.5em;
+    @include breakpoint('m') {
+      margin-top: 2em;
+    }
+  }
+}
+
+.slider {
+  padding-bottom: 1.5em;
+  &-control {
+    &-centerright,
+    &-centerleft {
+      display: none;
+    }
+    &-bottomcenter {
+      bottom: -1em !important;
+      ul {
+        top: 0.5em !important;
+      }
+    }
+  }
+}
