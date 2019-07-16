@@ -34,7 +34,7 @@
         background-color: $color;
         z-index: 2;
         mask: {
-          image: url('../images/svg/icon-'+$icon+'.svg');
+          image: url('../images/icons/icon-'+$icon+'.svg');
           size: $width;
           repeat: no-repeat;
           position: center;

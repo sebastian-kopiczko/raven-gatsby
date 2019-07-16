@@ -53,6 +53,7 @@ p {
   max-width: 1185px;
   margin: 0 auto;
 }
+// TODO CHANGE BASE FONT SIZE!!!
 h1 {
   font-size: 2rem;
   @include breakpoint('xs') {
@@ -70,6 +71,9 @@ h1 {
   @include breakpoint('xl') {
     font-size: 3.5rem;
   }
+}
+h2{
+  position: relative;
 }
 .menu-btn {
   background: none;
