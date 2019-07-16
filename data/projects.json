@@ -1,0 +1,66 @@
+[
+  {
+    "title": "My Project 1",
+    "slug": "project-1",
+    "url": "https://project1.com/",
+    "image": "./images/project1.jpg",
+    "description": "I built this site to show off my sweet skills!",
+    "tags": ["React", "Gatsby", "JavaScript"]
+  },
+  {
+    "title": "My Project 2",
+    "slug": "project-2",
+    "url": "https://project2.com/",
+    "image": "./images/project2.jpg",
+    "description": "This one is also good.",
+    "tags": ["GraphQL"]
+  },
+  {
+    "title": "My Project 3",
+    "slug": "project-3",
+    "url": "https://project3.com/",
+    "image": "./images/project3.jpg",
+    "description": "I built this site to show off my sweet skills!",
+    "tags": ["React", "Gatsby", "JavaScript"]
+  },
+  {
+    "title": "My Project 4",
+    "slug": "project-4",
+    "url": "https://project4.com/",
+    "image": "./images/project4.jpg",
+    "description": "I built this site to show off my sweet skills!",
+    "tags": ["React", "Gatsby", "JavaScript"]
+  },
+  {
+    "title": "My Project 5",
+    "slug": "project-5",
+    "url": "https://project5.com/",
+    "image": "./images/project5.jpg",
+    "description": "I built this site to show off my sweet skills!",
+    "tags": ["React", "Gatsby", "JavaScript"]
+  },
+  {
+    "title": "My Project 6",
+    "slug": "project-6",
+    "url": "https://project6.com/",
+    "image": "./images/project6.jpg",
+    "description": "I built this site to show off my sweet skills!",
+    "tags": ["React", "Gatsby", "JavaScript"]
+  },
+  {
+    "title": "My Project 7",
+    "slug": "project-7",
+    "url": "https://project7.com/",
+    "image": "./images/project7.jpg",
+    "description": "I built this site to show off my sweet skills!",
+    "tags": ["React", "Gatsby", "JavaScript"]
+  },
+  {
+    "title": "My Project 8",
+    "slug": "project-8",
+    "url": "https://project8.com/",
+    "image": "./images/project8.jpg",
+    "description": "I built this site to show off my sweet skills!",
+    "tags": ["React", "Gatsby", "JavaScript"]
+  }
+]
