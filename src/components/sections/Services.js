@@ -1,21 +1,26 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+
 import Section from "../Section"
 
 import ServicesItem from "../ServicesItem"
 import servicesPhoto from "../../images/services-man.png"
-// import SERVICE ITEM i nizej petla!!!!\
-
 const Services = props => {
-  const servicesIcons = [
-    "box",
-    "cd",
-    "compass",
-    "pulse",
-    "shield",
-    "syringe",
-    "truck",
-    "vehicle",
-  ]
+  const data = useStaticQuery(graphql`
+    {
+      allServicesJson {
+        edges {
+          node {
+            title
+            description
+            icon_name
+          }
+        }
+      }
+    }
+  `)
+
+  const services = data.allServicesJson.edges
   return (
     <Section
       id="services"
@@ -29,14 +34,23 @@ const Services = props => {
         It is a long established fact that a reader will be distracted by the
         readable content of a page when looking at its layout.
       </p>
-      {servicesIcons && (
+      {services && (
         <div className="services__container">
           <ul className="services__list">
-            {servicesIcons.map((icon, index) => (
-              <li key={index} className="services__item">
-                <ServicesItem iconName={icon} text={icon} />
-              </li>
-            ))}
+            {services.map(({ node: service }, index) => {
+              const title = service.title
+              const description = service.description
+              const icon = service.icon_name
+              return (
+                <li key={index} className="services__item">
+                  <ServicesItem
+                    title={title}
+                    iconName={icon}
+                    description={description}
+                  />
+                </li>
+              )
+            })}
           </ul>
         </div>
       )}
