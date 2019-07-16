@@ -1,23 +1,36 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import Section from "../Section"
 import ProjectsItem from "../ProjectsItem"
 import PageLink from "../PageLink"
 
+import ProjectPreview from "../ProjectPreview"
+
 const Projects = props => {
-  const projects = [
-    "thumb-1",
-    "thumb-2",
-    "thumb-3",
-    "thumb-4",
-    "thumb-5",
-    "thumb-6",
-    "thumb-7",
-    "thumb-8",
-    "thumb-9",
-    "thumb-10",
-    "thumb-11",
-    "thumb-12",
-  ]
+  const data = useStaticQuery(graphql`
+    {
+      allProjectsJson {
+        edges {
+          node {
+            title
+            slug
+            url
+            description
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  const projects = data.allProjectsJson.edges
+
   return (
     <Section
       id="projects"
@@ -27,9 +40,22 @@ const Projects = props => {
       heading="Projects"
     >
       <div className="projects__gallery">
-        {projects.map((project, index) => (
-          <ProjectsItem imageAlt={project} />
-        ))}
+        {projects.map(({ node: project }, index) => {
+          const title = project.title
+          const description = project.description
+          const imageData = project.image.childImageSharp.fluid
+          const slug = project.slug
+
+          return (
+            <ProjectPreview
+              title={title}
+              description={description}
+              imageData={imageData}
+              slug={slug}
+            />
+          )
+          // <ProjectsItem imageAlt={project} />
+        })}
       </div>
       <PageLink text="browse more" to="" color="purple" />
 

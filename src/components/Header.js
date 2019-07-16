@@ -1,10 +1,11 @@
 import React from "react"
 import { Helmet } from "react-helmet"
+import { Link } from "gatsby"
 
 import Navigation from "./Navigation"
 import ToggleMenu from "./ToggleMenu"
+import pageLogo from "../images/logo.svg"
 
-import { Link } from "gatsby"
 const Header = props => {
   return (
     <header className="header">
@@ -12,7 +13,7 @@ const Header = props => {
       <div className="header__inner">
         <div className="header__logo">
           <Link className="header__link" to="/">
-            {/* <img src={logo} alt="" />z */}
+            <img src={pageLogo} alt="" />
             <span className="header__title text-uppercase">
               {props.companyName}
             </span>
