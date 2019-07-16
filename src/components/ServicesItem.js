@@ -1,11 +1,12 @@
 import React from "react"
 import Icon from "./Icon"
 
-const ServicesItem = props => {
+const ServicesItem = ({ iconName, title, description }) => {
   return (
     <div className="card">
-      <Icon name={props.iconName} />
-      <h4 className="card__content text-uppercase center">{props.text}</h4>
+      <Icon name={iconName} />
+      <h4 className="card__content text-uppercase center">{title}</h4>
+      <p>{description}</p>
     </div>
   )
 }
