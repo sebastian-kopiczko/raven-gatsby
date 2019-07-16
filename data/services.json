@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Service 1",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur non excepturi consequatur sapiente, repellendus quis placeat odit laboriosam vero!",
+        "icon-name": "box"
+    },
+    {
+        "title": "Service 2",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur non excepturi consequatur sapiente, repellendus quis placeat odit laboriosam vero!",
+        "icon-name": "cd"
+    },
+    {
+        "title": "Service 3",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur non excepturi consequatur sapiente, repellendus quis placeat odit laboriosam vero!",
+        "icon-name": "compass"
+    },
+    {
+        "title": "Service 4",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur non excepturi consequatur sapiente, repellendus quis placeat odit laboriosam vero!",
+        "icon-name": "pulse"
+    },
+    {
+        "title": "Service 5",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur non excepturi consequatur sapiente, repellendus quis placeat odit laboriosam vero!",
+        "icon-name": "shield"
+    },
+    {
+        "title": "Service 6",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur non excepturi consequatur sapiente, repellendus quis placeat odit laboriosam vero!",
+        "icon-name": "syringe"
+    },
+    {
+        "title": "Service 7",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur non excepturi consequatur sapiente, repellendus quis placeat odit laboriosam vero!",
+        "icon-name": "truck"
+    },
+    {
+        "title": "Service 8",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur non excepturi consequatur sapiente, repellendus quis placeat odit laboriosam vero!",
+        "icon-name": "vehicle"
+    }
+]
