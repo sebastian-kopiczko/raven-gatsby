@@ -11,7 +11,7 @@ const Project = ({ title, description, url, imageData }) => (
       <a href={url}>View this project online &rarr; </a>
     </p>
     <p>
-      <Link to="/">&larr; back to all projects</Link>
+      <Link to="/#projects">&larr; back to all projects</Link>
     </p>
   </div>
 )
