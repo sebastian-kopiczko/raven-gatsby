@@ -30,7 +30,6 @@ const Projects = props => {
   `)
 
   const projects = data.allProjectsJson.edges
-
   return (
     <Section
       id="projects"

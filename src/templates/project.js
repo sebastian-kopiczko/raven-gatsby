@@ -35,7 +35,6 @@ const ProjectTemplate = ({ data }) => {
         url={url}
         imageData={imageData}
       />
-      <pre>{JSON.stringify(project, null, 2)}</pre>
     </Layout>
   )
 }
