@@ -1,0 +1,8 @@
+.swiper-container {
+    height: 20rem;
+    width: 100%;
+  
+    @media screen and (max-width: 32rem) {
+      height: 10rem !important;
+    }
+  }
