@@ -26,7 +26,9 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
-    "smooth-scroll": "^16.1.0"
+    "react-id-swiper": "^2.3.1",
+    "smooth-scroll": "^16.1.0",
+    "swiper": "^4.5.0"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
