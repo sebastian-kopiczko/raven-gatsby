@@ -2,6 +2,7 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Section from "../Section"
+import Carousel from "../Carousel"
 import TestimonialsItem from "../TestimonialsItem"
 
 const Testimonials = () => {
@@ -12,11 +13,19 @@ const Testimonials = () => {
           node {
             title
             content
+            image {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }
-    } 
+    }
   `)
+
   const testimonials = data.allTestimonialsJson.edges;
   return (
     <Section
@@ -26,20 +35,28 @@ const Testimonials = () => {
       uppercase={true}
       heading="Testimonials"
     >
+
       {testimonials && (
-        <div className="testimonials">
+        <Carousel>
+
+          {/* <div className="testimonials"> */}
           {testimonials.map(({ node: testimonial }, index) => {
             const title = testimonial.title
             const content = testimonial.content
+            const imageData = testimonial.image.childImageSharp.fluid
+
             return (
               <TestimonialsItem
                 key={index}
-                imageAlt={title}
                 content={content}
+                imageAlt={title}
+                imageData={imageData}
               />
             )
           })}
-        </div>
+          {/* </div> */}
+        </Carousel>
+
       )}
     </Section>
   )
