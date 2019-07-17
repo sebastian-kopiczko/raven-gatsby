@@ -1,16 +1,23 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql, useStaticQuery, Link } from "gatsby"
 import Icon from "./Icon"
 
 const Footer = props => {
-  const footerNavItems = [
-    { name: "facebook", link: "https://facebook.com/" },
-    { name: "twitter", link: "https://twitter.com/" },
-    { name: "google", link: "https://google.com/" },
-    { name: "youtube", link: "https://youtube.com/" },
-    { name: "arrow-up", link: "#home" },
-  ]
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          socialItems { 
+            name
+            link
+           }
+        }
+      }
+    }
+  `)
+  const footerNavItems = data.site.siteMetadata.socialItems;
   const currentYear = new Date().getFullYear()
+
   return (
     <footer className="footer">
       <div className="footer__container">
@@ -20,10 +27,10 @@ const Footer = props => {
               {item === "arrow-up" ? (
                 <Link to={item.link} />
               ) : (
-                <a href={item.link}>
-                  <Icon name={item.name} />
-                </a>
-              )}
+                  <a href={item.link}>
+                    <Icon name={item.name} />
+                  </a>
+                )}
             </li>
           ))}
         </ul>

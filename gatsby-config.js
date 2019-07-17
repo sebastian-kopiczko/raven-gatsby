@@ -1,6 +1,13 @@
 module.exports = {
   siteMetadata: {
     navigationItems: ["home", "services", "projects", "testimonials"],
+    socialItems: [
+      { name: "facebook", link: "https://facebook.com/" },
+      { name: "twitter", link: "https://twitter.com/" },
+      { name: "google", link: "https://google.com/" },
+      { name: "youtube", link: "https://youtube.com/" },
+      { name: "arrow-up", link: "#home" },
+    ],
     copyright: "Copyright &copy;",
     headerCompanyName: "Raven",
   },
