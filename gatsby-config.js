@@ -23,6 +23,13 @@ module.exports = {
         path: "./data",
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "testimonials",
+        path: "./data",
+      },
+    },
     "gatsby-transformer-json",
   ],
 }
