@@ -1,42 +1,32 @@
 [
     {
         "title": "Service 1",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur non excepturi consequatur sapiente, repellendus quis placeat odit laboriosam vero!",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
         "icon-name": "box"
     },
     {
         "title": "Service 2",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur non excepturi consequatur sapiente, repellendus quis placeat odit laboriosam vero!",
-        "icon-name": "cd"
-    },
-    {
-        "title": "Service 3",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur non excepturi consequatur sapiente, repellendus quis placeat odit laboriosam vero!",
+        "description": "Nobis similique temporibus eveniet architecto minima.",
         "icon-name": "compass"
     },
     {
-        "title": "Service 4",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur non excepturi consequatur sapiente, repellendus quis placeat odit laboriosam vero!",
-        "icon-name": "pulse"
-    },
-    {
-        "title": "Service 5",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur non excepturi consequatur sapiente, repellendus quis placeat odit laboriosam vero!",
+        "title": "Service 3",
+        "description": "Repudiandae blanditiis temporibus qui officia voluptate odit.",
         "icon-name": "shield"
     },
     {
-        "title": "Service 6",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur non excepturi consequatur sapiente, repellendus quis placeat odit laboriosam vero!",
-        "icon-name": "syringe"
+        "title": "Service 4",
+        "description": "Laborum tenetur non excepturi consequatur sapiente.",
+        "icon-name": "cd"
     },
     {
-        "title": "Service 7",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur non excepturi consequatur sapiente, repellendus quis placeat odit laboriosam vero!",
+        "title": "Service 5",
+        "description": "Praesentium architecto iste id magnam.",
         "icon-name": "truck"
     },
     {
-        "title": "Service 8",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum tenetur non excepturi consequatur sapiente, repellendus quis placeat odit laboriosam vero!",
+        "title": "Service 6",
+        "description": "Quod iusto iure nisi repellat natus.",
         "icon-name": "vehicle"
     }
 ]
