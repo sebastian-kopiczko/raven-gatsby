@@ -1,20 +1,17 @@
 import React from "react"
+import PropTypes from 'prop-types'
+
 import { Link } from "gatsby"
-import ToggleMenuButton from "./ToggleMenu"
-const Navigation = props => {
+
+const Navigation = ({ navItems, action }) => {
   return (
     <nav id="navigation" className="navigation">
-      <ToggleMenuButton>&times;</ToggleMenuButton>{" "}
-      {props.navItems && (
+      {navItems && (
         <ul className="navigation__list">
-          {props.navItems.map((item, index) => (
+          {navItems.map((item, index) => (
             <li key={index} className="navigation__item">
               <Link
-                onClick={() => {
-                  document
-                    .getElementById("navigation")
-                    .classList.remove("navigation--active")
-                }}
+                onClick={action}
                 to={`/#${item}`}
                 className="navigation__link"
               >
@@ -27,4 +24,10 @@ const Navigation = props => {
     </nav>
   )
 }
+
+Navigation.propTypes = {
+  action: PropTypes.func.isRequired,
+  navItems: PropTypes.array.isRequired
+}
+
 export default Navigation
