@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import Header from "./Header"
 import Footer from "./Footer"
+import 'normalize.css';
 import "../styles/main.scss"
 
 const Layout = props => {
