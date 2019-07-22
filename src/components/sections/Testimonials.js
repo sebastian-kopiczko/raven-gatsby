@@ -26,37 +26,34 @@ const Testimonials = () => {
     }
   `)
 
-  const testimonials = data.allTestimonialsJson.edges;
+  const testimonials = data.allTestimonialsJson.edges
   return (
     <Section
       id="testimonials"
-      className="testimonials"
+      customClassName="testimonials"
       center={true}
       uppercase={true}
       heading="Testimonials"
     >
-
       {testimonials && (
-        <Carousel>
+        <div className="testimonials__container">
+          <Carousel>
+            {testimonials.map(({ node: testimonial }, index) => {
+              const title = testimonial.title
+              const content = testimonial.content
+              const imageData = testimonial.image.childImageSharp.fluid
 
-          {/* <div className="testimonials"> */}
-          {testimonials.map(({ node: testimonial }, index) => {
-            const title = testimonial.title
-            const content = testimonial.content
-            const imageData = testimonial.image.childImageSharp.fluid
-
-            return (
-              <TestimonialsItem
-                key={index}
-                content={content}
-                imageAlt={title}
-                imageData={imageData}
-              />
-            )
-          })}
-          {/* </div> */}
-        </Carousel>
-
+              return (
+                <TestimonialsItem
+                  key={index}
+                  content={content}
+                  imageAlt={title}
+                  imageData={imageData}
+                />
+              )
+            })}
+          </Carousel>
+        </div>
       )}
     </Section>
   )
