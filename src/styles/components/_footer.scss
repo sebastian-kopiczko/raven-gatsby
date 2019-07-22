@@ -1,45 +1,22 @@
-@import '../utils/mixins';
+@import "../utils/mixins";
 .footer {
   width: 100%;
   background: $black-dark;
   color: $white;
-  padding: 0;
-  @include breakpoint('xs') {
-    padding: 0 1.5em;
+  padding: 0 0 1em 0;
+  @include breakpoint("sm") {
   }
-  @include breakpoint('m') {
-    padding: 0 2em;
-  }
-  .row {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
+  @include breakpoint("m") {
   }
   &__copyright {
-    width: 100%;
     text-align: center;
-    margin-top: 0.5em;
-    @include breakpoint('xs') {
-      flex: 3;
-      margin: 1em 0;
-      text-align: left;
-      display: flex;
-      align-items: center;
-    }
-    @include breakpoint('m') {
-    }
+    margin: 0 auto;
   }
   &__navigation {
     display: flex;
-    width: 80%;
-    margin: 0;
-    padding: 0;
-    @include breakpoint('xs') {
-      max-width: 20em;
-      flex: 2;
-    }
-    @include breakpoint('s') {
-    }
+    margin: 0 auto;
+    padding: 0 0 0.5em 0;
+    max-width: 30em;
     &__item {
       list-style: none;
       flex: 1;
@@ -48,9 +25,6 @@
       transition: all 0.2s ease-in-out;
       &:hover {
         background: $purple-dark;
-      }
-      @include breakpoint('s') {
-        height: 4em;
       }
     }
     &__link {
