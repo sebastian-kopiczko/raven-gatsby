@@ -1,18 +1,31 @@
 import React from "react"
 
-const Section = props => {
-  let headingClassName = `${props.class}__heading`
-  if (props.center) {
-    headingClassName += " text-center"
-  }
-  if (props.uppercase) {
-    headingClassName += " text-uppercase"
-  }
+const Section = ({
+  center,
+  uppercase,
+  id,
+  customClassName,
+  heading,
+  style,
+  children,
+}) => {
+  const headingClass = `${center ? `text--center ` : ``} ${
+    uppercase ? `text--uppercase ` : ``
+  }`
   return (
-    <section id={props.id} className={`${props.className} section`}>
-      {props.heading && <h2 className={headingClassName}>{props.heading}</h2>}
-      {props.children}
+    <section style={style} id={id} className={`section ${customClassName}`}>
+      {heading.length > 0 && (
+        <h2
+          className={`section__heading 
+          ${headingClass} ${` `}
+          ${customClassName}__heading`}
+        >
+          {heading}
+        </h2>
+      )}
+      {children}
     </section>
   )
 }
+
 export default Section
