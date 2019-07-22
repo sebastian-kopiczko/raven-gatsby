@@ -1,66 +1,103 @@
 [
   {
     "title": "My Project 1",
+    "subtitle": "Some subtitle",
     "slug": "project-1",
     "url": "https://project1.com/",
     "image": "./images/project1.jpg",
-    "description": "I built this site to show off my sweet skills!",
-    "tags": ["React", "Gatsby", "JavaScript"]
+    "description": "Voluptate omnis illo nemo asperiores adipisci temporibus ipsum praesentium cumque inventore facere.",
+    "tags": [
+      "React",
+      "Gatsby",
+      "JavaScript"
+    ]
   },
   {
     "title": "My Project 2",
     "slug": "project-2",
     "url": "https://project2.com/",
     "image": "./images/project2.jpg",
-    "description": "This one is also good.",
-    "tags": ["GraphQL"]
+    "description": "Libero amet corrupti atque ipsam, dolore soluta velit obcaecati doloremque ex omni.",
+    "tags": [
+      "GraphQL"
+    ]
   },
   {
     "title": "My Project 3",
+    "subtitle": "Some subtitle",
     "slug": "project-3",
     "url": "https://project3.com/",
     "image": "./images/project3.jpg",
-    "description": "I built this site to show off my sweet skills!",
-    "tags": ["React", "Gatsby", "JavaScript"]
+    "description": "Praesentium molestias rerum accusantium doloribus vero sapiente reiciendis nesciunt laudantium.",
+    "tags": [
+      "React",
+      "Gatsby",
+      "JavaScript"
+    ]
   },
   {
     "title": "My Project 4",
+    "subtitle": "Some subtitle",
     "slug": "project-4",
     "url": "https://project4.com/",
     "image": "./images/project4.jpg",
-    "description": "I built this site to show off my sweet skills!",
-    "tags": ["React", "Gatsby", "JavaScript"]
+    "description": "Praesentium molestias rerum accusantium doloribus vero sapiente reiciendis nesciunt laudantium.",
+    "tags": [
+      "React",
+      "Gatsby",
+      "JavaScript"
+    ]
   },
   {
     "title": "My Project 5",
+    "subtitle": "Some subtitle",
     "slug": "project-5",
     "url": "https://project5.com/",
     "image": "./images/project5.jpg",
-    "description": "I built this site to show off my sweet skills!",
-    "tags": ["React", "Gatsby", "JavaScript"]
+    "description": "Repudiandae blanditiis temporibus qui officia voluptate odit.",
+    "tags": [
+      "React",
+      "Gatsby",
+      "JavaScript"
+    ]
   },
   {
     "title": "My Project 6",
+    "subtitle": "Some subtitle",
     "slug": "project-6",
     "url": "https://project6.com/",
     "image": "./images/project6.jpg",
-    "description": "I built this site to show off my sweet skills!",
-    "tags": ["React", "Gatsby", "JavaScript"]
+    "description": "Praesentium molestias rerum accusantium doloribus vero sapiente reiciendis nesciunt laudantium.",
+    "tags": [
+      "React",
+      "Gatsby",
+      "JavaScript"
+    ]
   },
   {
     "title": "My Project 7",
+    "subtitle": "Some subtitle",
     "slug": "project-7",
     "url": "https://project7.com/",
     "image": "./images/project7.jpg",
-    "description": "I built this site to show off my sweet skills!",
-    "tags": ["React", "Gatsby", "JavaScript"]
+    "description": "Voluptate omnis illo nemo asperiores adipisci temporibus ipsum praesentium cumque inventore facere.",
+    "tags": [
+      "React",
+      "Gatsby",
+      "JavaScript"
+    ]
   },
   {
     "title": "My Project 8",
+    "subtitle": "Some subtitle",
     "slug": "project-8",
     "url": "https://project8.com/",
     "image": "./images/project8.jpg",
-    "description": "I built this site to show off my sweet skills!",
-    "tags": ["React", "Gatsby", "JavaScript"]
+    "description": "Repudiandae blanditiis temporibus qui officia voluptate odit.",
+    "tags": [
+      "React",
+      "Gatsby",
+      "JavaScript"
+    ]
   }
 ]
