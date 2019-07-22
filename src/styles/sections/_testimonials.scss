@@ -1,0 +1,21 @@
+.testimonials {
+  &__container {
+    padding: 1.66em 0;
+  }
+  &__item {
+    .gatsby-image-wrapper {
+      border-radius: 50%;
+      height: 7em;
+      width: 7em;
+      margin: 0 auto;
+      object-fit: contain;
+    }
+  }
+  &__content {
+    padding-bottom: 1.66em;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: $purple-light !important;
+}
