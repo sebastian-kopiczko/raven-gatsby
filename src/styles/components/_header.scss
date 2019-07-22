@@ -1,0 +1,148 @@
+@import "../utils/variables";
+@import "../utils/mixins";
+
+.header {
+  width: 100%;
+  position: fixed;
+  padding: 0.15em 1em;
+  color: #fff;
+  background-color: $black-light;
+  z-index: 3;
+  &__inner {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1185px;
+    display: flex;
+    flex-direction: row;
+  }
+  &__logo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    img {
+      margin: 0;
+      height: 1.8em;
+    }
+  }
+  &__title {
+    padding-left: 0.5em;
+  }
+  &__nav-container {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @include breakpoint("xs") {
+    padding: 0.3em 1em;
+  }
+
+  @include breakpoint("s") {
+    padding: 0.5em 1.66em;
+    &__title {
+      font-size: 1.2em;
+    }
+  }
+
+  @include breakpoint("sm") {
+    padding: 0.5em 2em;
+  }
+
+  @include breakpoint("m") {
+    padding: 0.66em 2.5em;
+    &__logo {
+      img {
+        height: 2rem;
+      }
+    }
+  }
+}
+
+.navigation {
+  position: absolute;
+  top: -1000px;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  background: $black-light;
+  transition: all 0.2s;
+  visibility: hidden;
+
+  &__link {
+    display: inline-block;
+    padding: 0.5em 0;
+    width: 100%;
+
+    &:hover {
+      background: $purple-light;
+    }
+    &:focus {
+      background: $purple-light;
+    }
+    &:active {
+      background: $purple-light;
+    }
+  }
+  &__list {
+    margin: 0;
+    padding: 0 1.5em;
+    position: relative;
+    width: 100%;
+    @media (min-height: 400px) {
+      top: 0;
+      padding: 1.5em;
+    }
+  }
+  &__item {
+    text-align: center;
+    list-style: none;
+    transition: all 0.2s;
+    font: {
+      weight: 700;
+      size: 1.8rem;
+    }
+  }
+  &__menu-btn {
+    display: block;
+    z-index: 1;
+    background: none;
+    border: none;
+    font-size: 2.3em;
+    color: #fff;
+  }
+  &--active {
+    visibility: visible;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  @include breakpoint("m") {
+    position: relative;
+    height: auto;
+    top: 0;
+    background: none;
+    visibility: visible;
+    &__link {
+      padding: 0.5em 1.2em;
+      font-size: 0.9em;
+    }
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0;
+    }
+    &__item {
+      border-radius: 3px;
+      text-transform: capitalize;
+      font: {
+        weight: 400;
+        size: 1em;
+      }
+    }
+    &__menu-btn {
+      display: none;
+    }
+  }
+}
