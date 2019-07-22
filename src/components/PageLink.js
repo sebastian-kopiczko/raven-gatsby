@@ -3,12 +3,13 @@ import PropTypes from "prop-types"
 
 import { Link } from "gatsby"
 
-const PageLink = props => {
-  let pageLinkClassName = "pageLink"
-  props.color && (pageLinkClassName += ` pageLink--${props.color}`)
+const PageLink = ({ customClassName, to, text, color }) => {
+  let pageLinkClassName = "page-link"
+  color && (pageLinkClassName += ` page-link--${color}`)
+  customClassName && (pageLinkClassName += ` ${customClassName}`)
   return (
-    <Link to={`#${props.to}`} className={pageLinkClassName}>
-      {props.text}
+    <Link to={`#${to}`} className={`${pageLinkClassName}`}>
+      {text}
     </Link>
   )
 }
