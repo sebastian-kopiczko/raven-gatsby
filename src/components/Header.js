@@ -17,11 +17,17 @@ class Header extends Component {
 
   toggleMenu = e => {
     e.preventDefault()
-    const d = document
-    d.getElementById("navigation").classList.toggle("navigation--active")
-    d.getElementById("main").classList.toggle("main--hidden")
-    d.getElementById("footer").classList.toggle("main--hidden")
-    this.setState({ isToggleOn: !this.state.isToggleOn })
+    const viewportWidth =
+      window.innerWidth || document.documentElement.clientWidth
+    if (viewportWidth < 1024) {
+      const d = document
+      d.getElementById("navigation").classList.toggle("navigation--active")
+      d.getElementById("main").classList.toggle("main--hidden")
+      d.getElementById("footer").classList.toggle("main--hidden")
+      this.setState({ isToggleOn: !this.state.isToggleOn })
+    } else {
+      return
+    }
   }
 
   render() {
