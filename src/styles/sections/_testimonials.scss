@@ -1,5 +1,5 @@
 .testimonials {
-  &__container {
+  &__inner {
     padding: 1.66em 0;
   }
   &__item {
@@ -13,6 +13,8 @@
   }
   &__content {
     padding-bottom: 1.66em;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
