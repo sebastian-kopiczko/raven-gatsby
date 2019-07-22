@@ -36,7 +36,7 @@ const Testimonials = () => {
       heading="Testimonials"
     >
       {testimonials && (
-        <div className="testimonials__container">
+        <div className="testimonials__inner">
           <Carousel>
             {testimonials.map(({ node: testimonial }, index) => {
               const title = testimonial.title
