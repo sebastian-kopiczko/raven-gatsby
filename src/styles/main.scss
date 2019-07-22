@@ -1,18 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
-@import './utils/variables';
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800");
 
-@import './base/base';
+@import "./utils/variables";
+@import "./base/base";
 
+@import "./components/header";
+@import "./components/footer";
+@import "./components/pageLink";
 
-@import './layout/layout';
-@import './layout/header';
-@import './components/footer';
-
-@import './components/testimonials';
-@import './components/hero';
-@import './components/pageLink';
-
-@import './pages/home';
-
-
-// @import './vendor/';
+@import "./pages/home";
+@import "./sections/hero";
+@import "./sections/services";
+@import "./sections/projects";
+@import "./sections/testimonials";
