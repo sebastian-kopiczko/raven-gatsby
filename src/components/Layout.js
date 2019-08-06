@@ -3,10 +3,10 @@ import { useStaticQuery, graphql } from "gatsby"
 import PropTypes from "prop-types"
 import Header from "./Header"
 import Footer from "./Footer"
-import 'normalize.css';
+import "normalize.css"
 import "../styles/main.scss"
 
-const Layout = props => {
+const Layout = ({ children, footerNav, footerBottom }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -24,13 +24,23 @@ const Layout = props => {
   if (typeof window !== "undefined") {
     require("smooth-scroll")('a[href*="#"]')
   }
-
+  console.log(companyName)
   return (
-    <div className="app__layout">
-      <Header companyName={companyName} navItems={navItems} />
-      <Fragment>{props.children}</Fragment>
-      <Footer copyright={copyright} />
-    </div>
+    <main id="main">
+      <div className="app__layout">
+        <Header
+          companyName={companyName}
+          title={companyName}
+          navItems={navItems}
+        />
+        <Fragment>{children}</Fragment>
+        <Footer
+          copyright={copyright}
+          footerNav={footerNav}
+          footerBottom={footerBottom}
+        />
+      </div>
+    </main>
   )
 }
 
