@@ -5,13 +5,11 @@ import { Hero, Services, Projects, Testimonials } from "../components/sections/"
 const IndexPage = () => {
   return (
     <div>
-      <Layout>
-        <main id="main">
-          <Hero />
-          <Services />
-          <Projects />
-          <Testimonials />
-        </main>
+      <Layout footerNav={true}>
+        <Hero />
+        <Services />
+        <Projects />
+        <Testimonials />
       </Layout>
     </div>
   )
