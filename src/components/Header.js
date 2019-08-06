@@ -35,32 +35,28 @@ class Header extends Component {
       isToggleOn ? (buttonIcon = icons.close) : (buttonIcon = icons.hamburger)
     }`
     return (
-      <div>
-        <header className="header">
-          <Helmet title={`${title} | official website`} />
-          <div className="header__inner">
-            <Link className="header__logo" to="/">
-              <img src={pageLogo} alt="" />
-              <span className="header__title text-uppercase">
-                {companyName}
-              </span>
-            </Link>
-            <div className="header__nav-container">
-              <button
-                onClick={this.toggleMenu}
-                aria-label="Toggle mobile menu visibility"
-                id="menu-close-btn"
-                className="navigation__menu-btn menu-btn"
-                dangerouslySetInnerHTML={{ __html: buttonIcon }}
-              ></button>
-              <Navigation
-                action={this.toggleMenu}
-                navItems={this.props.navItems}
-              />
-            </div>
+      <header className="header">
+        <Helmet title={`${title} | official website`} />
+        <div className="header__inner">
+          <Link className="header__logo" to="/">
+            <img src={pageLogo} alt="" />
+            <span className="header__title text-uppercase">{companyName}</span>
+          </Link>
+          <div className="header__nav-container">
+            <button
+              onClick={this.toggleMenu}
+              aria-label="Toggle mobile menu visibility"
+              id="menu-close-btn"
+              className="navigation__menu-btn menu-btn"
+              dangerouslySetInnerHTML={{ __html: buttonIcon }}
+            ></button>
+            <Navigation
+              action={this.toggleMenu}
+              navItems={this.props.navItems}
+            />
           </div>
-        </header>
-      </div>
+        </div>
+      </header>
     )
   }
 }
