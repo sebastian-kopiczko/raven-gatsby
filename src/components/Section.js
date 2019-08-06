@@ -23,7 +23,7 @@ const Section = ({
           {heading}
         </h2>
       )}
-      {children}
+      <div className="section__inner">{children}</div>
     </section>
   )
 }
