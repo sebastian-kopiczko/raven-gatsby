@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import Icon from "./Icon"
 
-const Footer = () => {
+const Footer = ({ footerNav, footerBottom }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
@@ -19,21 +19,26 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer id="footer" className="footer">
+    <footer
+      id="footer"
+      className={`footer ${footerBottom && "footer--bottom"}`}
+    >
       <div className="footer__container">
-        <ul className="footer__navigation">
-          {footerNavItems.map((item, index) => (
-            <li key={index} className="footer__navigation__item">
-              {item === "arrow-up" ? (
-                <Link to={item.link} />
-              ) : (
-                <a href={item.link}>
-                  <Icon name={item.name} />
-                </a>
-              )}
-            </li>
-          ))}
-        </ul>
+        {footerNav && (
+          <ul className="footer__navigation">
+            {footerNavItems.map((item, index) => (
+              <li key={index} className="footer__navigation__item">
+                {item === "arrow-up" ? (
+                  <Link to={item.link} />
+                ) : (
+                  <a href={item.link}>
+                    <Icon name={item.name} />
+                  </a>
+                )}
+              </li>
+            ))}
+          </ul>
+        )}
         <p className="footer__copyright">Copyright &copy; {currentYear}</p>
       </div>
     </footer>
