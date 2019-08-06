@@ -7,6 +7,7 @@ export const query = graphql`
   query($slug: String!) {
     projectsJson(slug: { eq: $slug }) {
       title
+      subtext
       description
       url
       image {
@@ -23,14 +24,16 @@ export const query = graphql`
 const ProjectTemplate = ({ data }) => {
   const project = data.projectsJson
   const title = project.title
+  const subtext = project.subtext
   const description = project.description
   const url = project.url
   const imageData = project.image.childImageSharp.fluid
 
   return (
-    <Layout>
+    <Layout footerNav={false} footerBottom={true}>
       <Project
         title={title}
+        subtext={subtext}
         description={description}
         url={url}
         imageData={imageData}
