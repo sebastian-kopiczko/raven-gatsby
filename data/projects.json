@@ -1,7 +1,7 @@
 [
   {
     "title": "My Project 1",
-    "subtitle": "Some subtitle",
+    "subtext": "Lorem ipsum dolor 2019-01-02",
     "slug": "project-1",
     "url": "https://project1.com/",
     "image": "./images/project1.jpg",
@@ -14,6 +14,7 @@
   },
   {
     "title": "My Project 2",
+    "subtext": "Lorem ipsum dolor 2019-01-02",
     "slug": "project-2",
     "url": "https://project2.com/",
     "image": "./images/project2.jpg",
@@ -24,6 +25,7 @@
   },
   {
     "title": "My Project 3",
+    "subtext": "Lorem ipsum dolor 2019-01-02",
     "subtitle": "Some subtitle",
     "slug": "project-3",
     "url": "https://project3.com/",
@@ -37,6 +39,7 @@
   },
   {
     "title": "My Project 4",
+    "subtext": "Lorem ipsum dolor 2019-01-02",
     "subtitle": "Some subtitle",
     "slug": "project-4",
     "url": "https://project4.com/",
@@ -50,6 +53,7 @@
   },
   {
     "title": "My Project 5",
+    "subtext": "Lorem ipsum dolor 2019-01-02",
     "subtitle": "Some subtitle",
     "slug": "project-5",
     "url": "https://project5.com/",
@@ -63,6 +67,7 @@
   },
   {
     "title": "My Project 6",
+    "subtext": "Lorem ipsum dolor 2019-01-02",
     "subtitle": "Some subtitle",
     "slug": "project-6",
     "url": "https://project6.com/",
@@ -76,6 +81,7 @@
   },
   {
     "title": "My Project 7",
+    "subtext": "Lorem ipsum dolor 2019-01-02",
     "subtitle": "Some subtitle",
     "slug": "project-7",
     "url": "https://project7.com/",
@@ -89,6 +95,7 @@
   },
   {
     "title": "My Project 8",
+    "subtext": "Lorem ipsum dolor 2019-01-02",
     "subtitle": "Some subtitle",
     "slug": "project-8",
     "url": "https://project8.com/",

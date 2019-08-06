@@ -1,7 +1,7 @@
 [
   {
     "title": "Testimonial one",
-    "image": "./images/author1.jpg",
+    "image": "./images/author3.jpg",
     "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate aspernatur illo unde provident voluptate blanditiis. Rem, iure magni quia quidem porro impedit ratione voluptatem deleniti."
   },
   {
@@ -11,7 +11,7 @@
   },
   {
     "title": "Testimonial3",
-    "image": "./images/author3.jpg",
+    "image": "./images/author1.jpg",
     "content": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
   }
 ]
