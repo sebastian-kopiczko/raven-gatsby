@@ -1,5 +1,5 @@
 import React from "react"
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types"
 
 import { Link } from "gatsby"
 
@@ -27,7 +27,7 @@ const Navigation = ({ navItems, action }) => {
 
 Navigation.propTypes = {
   action: PropTypes.func.isRequired,
-  navItems: PropTypes.array.isRequired
+  navItems: PropTypes.array.isRequired,
 }
 
 export default Navigation
