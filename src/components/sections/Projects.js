@@ -1,9 +1,7 @@
 import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Section from "../Section"
-// import ProjectsItem from "../ProjectsItem"
 import PageLink from "../PageLink"
-
 import ProjectCard from "../ProjectCard"
 
 const Projects = props => {
@@ -59,25 +57,28 @@ const Projects = props => {
             const description = project.description
             const imageData = project.image.childImageSharp.fluid
             const slug = project.slug
-
-            return (
-              <ProjectCard
-                title={title}
-                subtitle={subtitle}
-                description={description}
-                imageData={imageData}
-                slug={slug}
-              />
-            )
+            if (index < 6) {
+              return (
+                <ProjectCard
+                  title={title}
+                  subtitle={subtitle}
+                  description={description}
+                  imageData={imageData}
+                  slug={slug}
+                />
+              )
+            } else {
+              return
+            }
           })}
         </div>
       </div>
-      <PageLink
+      {/* <PageLink
         text="browse more"
-        to=""
+        to="/projects"
         color="purple"
         customClassName="projects__link"
-      />
+      /> */}
     </Section>
   )
 }
