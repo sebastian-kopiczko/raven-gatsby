@@ -8,7 +8,7 @@ const PageLink = ({ customClassName, to, text, color }) => {
   color && (pageLinkClassName += ` page-link--${color}`)
   customClassName && (pageLinkClassName += ` ${customClassName}`)
   return (
-    <Link to={`#${to}`} className={`${pageLinkClassName}`}>
+    <Link to={`${to}`} className={`${pageLinkClassName}`}>
       {text}
     </Link>
   )
