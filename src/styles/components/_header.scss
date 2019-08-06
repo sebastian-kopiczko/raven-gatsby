@@ -8,7 +8,8 @@
   &__inner {
     margin: 0 auto;
     width: 100%;
-    max-width: 1185px;
+    // max-width: 1185px;
+    max-width: 810px;
     display: flex;
     flex-direction: row;
   }
@@ -47,10 +48,25 @@
 
   @include breakpoint("m") {
     padding: 0.66em 2.5em;
+    &__inner {
+      align-items: center;
+    }
     &__logo {
       img {
         height: 2rem;
+        position: relative;
+        top: -3px;
       }
+    }
+  }
+  @include breakpoint("l") {
+    &__inner {
+      max-width: 1080px;
+    }
+  }
+  @include breakpoint("xxl") {
+    &__inner {
+      max-width: 1500px;
     }
   }
 }
@@ -69,7 +85,6 @@
     display: inline-block;
     padding: 0.5em 0;
     width: 100%;
-
     &:hover {
       background: $purple-light;
     }
@@ -133,6 +148,8 @@
     &__item {
       border-radius: 3px;
       text-transform: capitalize;
+      display: flex;
+      align-items: center;
       font: {
         weight: 400;
         size: 1em;

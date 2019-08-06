@@ -85,4 +85,29 @@
       flex: 0 0 calc(33% - 0.5em);
     }
   }
+  @include breakpoint("l") {
+    &__content {
+      padding-top: 1em;
+    }
+    &__list {
+      justify-content: space-evenly;
+    }
+    &__item {
+      flex: 0 0 calc(25% - 0.5em);
+    }
+  }
+  @include breakpoint("xl") {
+    &__list {
+      max-width: 85em;
+      justify-content: space-between;
+    }
+    &__item {
+      flex: 0 0 calc(100% / 3 - 1em);
+    }
+  }
+  @include breakpoint("xxl") {
+    &__item {
+      flex: 0 0 calc(100% / 6 - 0.5em);
+    }
+  }
 }

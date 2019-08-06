@@ -10,7 +10,7 @@
   color: #fff;
   z-index: 1;
   background: {
-    position: 78%;
+    position: 71%;
     size: cover;
   }
   &__heading {
@@ -19,12 +19,12 @@
       display: none;
     }
   }
-  &__content {
-  }
+
   &__link {
     transition: all 0.2s;
-    position: absolute;
-    bottom: 25%;
+    // margin-top: 2em;
+    position: relative;
+    top: 3em;
     &:hover {
       background: $purple-light;
       border-color: transparent;

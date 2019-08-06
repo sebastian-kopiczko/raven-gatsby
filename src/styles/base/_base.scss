@@ -18,6 +18,7 @@ body {
   min-height: 100%;
   font-family: "Open Sans", sans-serif;
   font-size: 16px;
+  position: relative;
   @include breakpoint("l") {
     font-size: 18px;
   }
@@ -118,9 +119,17 @@ h2 {
   }
   @include breakpoint("l") {
     padding: 2em 3em;
+    &__inner {
+      max-width: 1080px;
+    }
   }
   @include breakpoint("xl") {
     padding: 2.2em 3.4em;
+  }
+  @include breakpoint("xxl") {
+    &__inner {
+      max-width: 1500px;
+    }
   }
 }
 
